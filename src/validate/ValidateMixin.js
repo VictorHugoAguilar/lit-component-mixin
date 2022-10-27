@@ -1,20 +1,19 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import {
-    ScopedElementsMixin,
-    DisabledMixin,
-    SlotMixin,
-    SyncUpdatableMixin,
-} from "../core/index.js";
+import { ScopedElementsMixin } from "../core/ScopedElementsMixin.js";
+import { DisabledMixin } from "../core/DisabledMixin.js";
+import { SlotMixin } from "../core/SlotMixin.js";
+import { SyncUpdatableMixin } from "../core/SyncUpdatableMixin.js";
+
+import { FormControlMixin } from "../form/FormControlMixin.js";
+
+import { Validator } from "./Validator.js";
+import { Required } from "./validators/Required.js";
+import { ValidationFeedback } from "./ValidationFeedback.js";
 
 import { AsyncQueue } from "../utils/AsyncQueue.js";
 import { pascalCase } from "../utils/pascalCase.js";
 import { ResultValidator } from "./ResultValidator.js";
 import { Unparseable } from "./Unparseable.js";
-import { Validator } from "./Validator.js";
-import { Required } from "./validators/Required.js";
-
-import { ValidationFeedback } from "./ValidationFeedback.js";
-import { FormControlMixin } from "../form/index.js";
 
 /**
  * @param {any[]} array1

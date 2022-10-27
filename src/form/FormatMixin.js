@@ -1,8 +1,9 @@
 /* eslint-disable class-methods-use-this */
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
 
-import { FormControlMixin } from "./index.js";
-import { Unparseable, ValidateMixin } from "../validate/index.js";
+import { FormControlMixin } from "./FormControlMixin.js";
+import { ValidateMixin } from "../validate/ValidateMixin.js";
+import { Unparseable } from "../validate/Unparseable.js";
 
 // For a future breaking release:
 // - do not allow the private `.formattedValue` as property that can be set to

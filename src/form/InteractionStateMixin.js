@@ -1,6 +1,6 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
 
-import { FormControlMixin } from "./index.js";
+import { FormControlMixin } from "./FormControlMixin.js";
 
 /**
  * @desc `InteractionStateMixin` adds meta information about touched and dirty states, that can

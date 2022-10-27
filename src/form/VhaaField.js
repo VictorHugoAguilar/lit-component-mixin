@@ -1,8 +1,11 @@
-import { LitElement } from "lit-element";
+import { LitElement } from "lit";
 
-import { SlotMixin } from "../core/index.js";
-import { ValidateMixin } from "../validate/index.js";
-import { FocusMixin, FormatMixin, FormControlMixin, InteractionStateMixin } from "./index.js";
+import { SlotMixin } from "../core/SlotMixin.js";
+import { ValidateMixin } from "../validate/ValidateMixin.js";
+import { FocusMixin } from "./FocusMixin.js";
+import { FormatMixin } from "./FormatMixin.js";
+import { FormControlMixin } from "./FormControlMixin.js";
+import { InteractionStateMixin } from "./InteractionStateMixin.js";
 
 /**
  * `VhaaField`: wraps <input>, <textarea>, <select> and other interactable elements.

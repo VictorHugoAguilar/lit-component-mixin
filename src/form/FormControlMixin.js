@@ -1,10 +1,12 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import { css, html, nothing } from "lit-element";
+import { css, html, nothing } from "lit";
 
-import { uuid, getAriaElementsInRightDomOrder } from "../utils/index.js";
-import { Unparseable } from "../validate/index.js";
-import { FormRegisteringMixin } from "../form-registration/index.js";
-import { DisabledMixin, SlotMixin } from "../core/index.js";
+import { uuid } from "../utils/uuid.js";
+import { getAriaElementsInRightDomOrder } from "../utils/getAriaElementsInRightDomOrder.js";
+import { Unparseable } from "../validate/Unparseable.js";
+import { FormRegisteringMixin } from "../form-registration/FormRegisteringMixin.js";
+import { SlotMixin } from "../core/SlotMixin.js";
+import { DisabledMixin } from "../core/DisabledMixin.js";
 
 /**
  * #FormControlMixin :

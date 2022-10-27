@@ -4,17 +4,33 @@
     "description": "Mixin Custom for Web Component",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test:kaw": "karma start --auto-watch",
+        "test:kac": "karma start --coverage",
+        "test:tw": "web-test-runner test/**/*.test.js --node-resolve --watch",
+        "test:tc": "web-test-runner test/**/*.test.js --node-resolve --coverage"
     },
     "author": "Victor Hugo Aguilar Aguilar",
     "license": "MIT",
-    "dependencies": {
-        "lit-element": "^3.2.2"
-    },
     "devDependencies": {
         "@open-wc/dedupe-mixin": "^1.3.1",
-        "@webcomponents/webcomponentsjs": "^2.2.10",
+        "@open-wc/testing": "^3.1.6",
+        "@open-wc/testing-helpers": "^2.1.3",
+        "@open-wc/testing-karma": "^4.0.9",
+        "@web/test-runner": "^0.15.0",
+        "@web/test-runner-browserstack": "^0.5.1",
+        "@web/test-runner-commands": "^0.6.5",
+        "@web/test-runner-playwright": "^0.9.0",
+        "@webcomponents/webcomponentsjs": "^2.7.0",
+        "deepmerge": "^4.2.2",
         "es-dev-server": "^2.1.0",
+        "husky": "^8.0.1",
+        "jasmine-core": "^4.4.0",
+        "karma": "^6.4.1",
+        "karma-chrome-launcher": "^3.1.1",
+        "karma-coverage-istanbul-reporter": "^3.0.3",
+        "karma-jasmine": "^5.1.0",
+        "lit": "^2.4.0",
+        "sinon": "^14.0.1",
         "wct-browser-legacy": "^1.0.2"
     }
 }

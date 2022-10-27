@@ -1,11 +1,13 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import { html } from "lit-element";
-import { SlotMixin, DisabledMixin } from "../core/index.js";
-import { FormControlMixin } from "../form/index.js";
-import { FormControlsCollection, FormRegistrarMixin } from "../form-registration/index.js";
-import { ValidateMixin } from "../validate/index.js";
-import { getAriaElementsInRightDomOrder } from "../utils/index.js";
-import { FormElementsHaveNoError } from "./index.js";
+import { html } from "lit";
+import { SlotMixin } from "../core/SlotMixin.js";
+import { DisabledMixin } from "../core/DisabledMixin.js";
+import { FormControlMixin } from "../form/FormControlMixin.js";
+import { FormControlsCollection } from "../form-registration/FormControlsCollection.js";
+import { FormRegistrarMixin } from "../form-registration/FormRegistrarMixin.js";
+import { ValidateMixin } from "../validate/ValidateMixin.js";
+import { getAriaElementsInRightDomOrder } from "../utils/getAriaElementsInRightDomOrder.js";
+import { FormElementsHaveNoError } from "./FormElementsHaveNoError.js";
 
 /**
  * @desc Form group mixin serves as the basis for (sub) forms. Designed to be put on

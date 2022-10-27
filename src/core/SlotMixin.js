@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
 
-import { render } from "lit-element";
+import { render } from "lit";
 import { isTemplateResult } from "lit-html/directive-helpers.js";
 
 /**

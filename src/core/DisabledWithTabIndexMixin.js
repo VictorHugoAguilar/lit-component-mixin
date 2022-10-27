@@ -83,7 +83,7 @@ const DisabledWithTabIndexMixinImplementation = (superclass) =>
             }
         }
 
-        /** @param {import('lit-element').PropertyValues } changedProperties */
+        /** @param changedProperties */
         firstUpdated(changedProperties) {
             super.firstUpdated(changedProperties);
             // for ShadyDom the timing is a little different and we need to make sure

@@ -1,4 +1,4 @@
-import { unsafeCSS, css } from "lit-element";
+import { unsafeCSS, css } from "lit";
 
 /**
  * @typedef {import('lit').ReactiveControllerHost} ReactiveControllerHost

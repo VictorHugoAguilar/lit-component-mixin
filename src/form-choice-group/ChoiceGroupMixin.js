@@ -1,7 +1,7 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
 
-import { FormRegistrarMixin } from "../form-registration/index.js";
-import { InteractionStateMixin } from "../form/index.js";
+import { FormRegistrarMixin } from "../form-registration/FormRegistrarMixin.js";
+import { InteractionStateMixin } from "../form/InteractionStateMixin.js";
 
 /**
  * ChoiceGroupMixin applies on both Fields (listbox/select-rich/combobox)  and FormGroups

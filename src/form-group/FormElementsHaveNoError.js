@@ -1,4 +1,4 @@
-import { Validator } from "../validate/index.js";
+import { Validator } from "../validate/Validator.js";
 
 /**
  * @type {FormElementsHaveNoError}

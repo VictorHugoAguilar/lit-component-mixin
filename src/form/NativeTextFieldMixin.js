@@ -1,5 +1,7 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import { FormControlMixin, FocusMixin, FormatMixin } from "./index.js";
+import { FormControlMixin } from "./FormControlMixin.js";
+import { FocusMixin } from "./FocusMixin.js";
+import { FormatMixin } from "./FormatMixin.js";
 
 /**
  * @type {NativeTextFieldMixin}

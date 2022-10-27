@@ -1,8 +1,8 @@
 // eslint-disable-next-line max-classes-per-file
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
 
-import { FormControlsCollection } from "./FormControlsCollection";
-import { FormRegisteringMixin } from "./FormRegisteringMixin";
+import { FormControlsCollection } from "./FormControlsCollection.js";
+import { FormRegisteringMixin } from "./FormRegisteringMixin.js";
 
 /**
  * @desc This allows an element to become the manager of a register.

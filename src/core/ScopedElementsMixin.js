@@ -1,5 +1,5 @@
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import { adoptStyles } from "lit-element";
+import { adoptStyles } from "lit";
 
 const supportsScopedRegistry = !!ShadowRoot.prototype.createElement;
 

@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import { dedupeMixin } from "@open-wc/dedupe-mixin";
-import { css, html, nothing } from "lit-element";
-import { FormatMixin } from "../form/index.js";
+import { css, html, nothing } from "lit";
+import { FormatMixin } from "../form/FormatMixin.js";
 
 /**
  * @param {ChoiceInputModelValue} nw\

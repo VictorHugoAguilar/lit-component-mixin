@@ -1,6 +1,7 @@
-import { html, LitElement } from "lit-element";
+import { html, LitElement } from "lit";
 
 /**
+ *  * @type {ValidationFeedback}
  * @desc Takes care of accessible rendering of error messages
  * Should be used in conjunction with FormControl having ValidateMixin applied
  */

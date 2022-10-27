@@ -9,7 +9,6 @@ import { dedupeMixin } from "@open-wc/dedupe-mixin";
  * out of the box by LitElement, which runs after connectedCallback as well.
  * - makes the propertyAccessor.`hasChanged` compatible in synchronous updates:
  * `updateSync` will only be called when new value differs from old value.
- * See: https://lit-element.polymer-project.org/guide/lifecycle#haschanged
  * - it is a stable abstraction on top of a protected/non official lifecycle LitElement api.
  * Whenever the implementation of `requestUpdate` changes (this happened in the past for
  * `requestUpdate`) we only have to change our abstraction instead of all our components
@@ -33,7 +32,7 @@ const SyncUpdatableMixinImplementation = (superclass) =>
         /**
          * Empty pending queue in order to guarantee order independence
          *
-         * @param {import('lit-element').PropertyValues } changedProperties
+         * @param changedProperties
          */
         firstUpdated(changedProperties) {
             super.firstUpdated(changedProperties);
